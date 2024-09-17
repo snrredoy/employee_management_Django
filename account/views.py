@@ -19,7 +19,7 @@ def SignUp(request):
         form = NewUserCreationForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect("login")
+            return redirect("profile")
 
     return render(request, "account/signup.html", {"form": form})
 
