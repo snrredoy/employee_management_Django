@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+<div>
+  {% block content %}
+
+
+
+
+<div class="p-5">
+    <a href="/">
+        <button class="px-8 py-4 bg-green-500 p-1 text-center rounded">
+        Back
+      </button>
+    </a>
+</div>
+ <p>Are Your Sure ? </p>
+  <div class="m-5">
+    <form action="" method="post">
+      {% csrf_token %}
+      
+      <button class="px-8 py-4 bg-red-500 p-1 text-center rounded">
+        Delete
+      </button>
+     
+      </a>
+      
+    </form>
+  </div>
+  {% endblock content %}
+</div>

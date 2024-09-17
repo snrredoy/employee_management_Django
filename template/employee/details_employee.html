@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %} Employee {% endblock title %}
+
+
+{% block content %}
+
+<div
+  class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 p-5"
+>
+  <ul>
+    <li>Name : {{object.name}}</li>
+    <li>Designation : {{object.designation}}</li>
+    <li>Phone Number : {{object.phone_number}}</li>
+    <li>Salary : {{object.salary}}</li>
+    <li>Address : {{object.address}}</li>
+    <li>Description : {{object.description}}</li>
+  </ul>
+</div>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %} Sign Up {% endblock title %}
+
+{% block content %}
+
+<div class="p-5">
+  <p>Profile Information</p>
+
+  <div>
+    <div class="p-1">
+      <img
+        class="w-48 h-48"
+        src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
+        alt=""
+      />
+    </div>
+    <p>User Name : {{user.username}}</p>
+    <p>Name : {{user.email}}</p>
+  </div>
+</div>
+
+{% endblock content %}
